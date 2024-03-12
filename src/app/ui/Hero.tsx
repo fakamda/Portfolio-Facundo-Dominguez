@@ -14,7 +14,6 @@ const Hero = () => {
           <About />
         </div>
         <Image className=" opacity-90" src={fondo} alt='fondo' />
-        {/* <div className="circlePosition w-[520px] h-[400px] bg-[#c56bb2] rounded-[100%] absolute z-[-1] top-[50%] left-[50%] translate-x-[9%] translate-y-[-50%] blur-[170px]"></div> */}
       </div>
     </div>
   )
