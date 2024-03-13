@@ -1,5 +1,5 @@
 import Image from "next/image"
-import fondo from '../../assets/JAPAN5.png'
+import fondo from '../../assets/images/JAPAN5.png'
 import About from "./About"
 
 

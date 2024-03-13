@@ -31,7 +31,7 @@ const Experience = () => {
         <div className="flex flex-col gap-1">
           <h3 className="text-xl font-bold">Full Stack Developer</h3>
           <p className="text-sm text-gray-500">Freelance</p>
-          <p className="text-sm text-gray-500">Oct 2021 - Present</p>
+          <p className="text-sm text-gray-500">Oct 2022 - Present</p>
           <p className="text-sm">
           Desarrollo y prototipo nuevas características para diversos proyectos como freelance. Utilizo investigación de usuarios para guiar las decisiones de desarrollo.
           </p>

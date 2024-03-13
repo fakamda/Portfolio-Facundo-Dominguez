@@ -1,5 +1,5 @@
 import Image from "next/image"
-import proyecto1 from '../../assets/japan1.jpg'
+import proyecto1 from '../../assets/images/japan1.jpg'
 
 
 const Projects = () => {

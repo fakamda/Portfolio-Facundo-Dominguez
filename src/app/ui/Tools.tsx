@@ -1,3 +1,5 @@
+import { AstroIcon } from "@/assets/svg/icons"
+
 const Tools = () => {
   return (
     <div className="flex flex-col justify-center items-center mt-10">
@@ -10,8 +12,8 @@ const Tools = () => {
           This are the main tools that I know and Use.
         </p>
       </div>
-      <div>
-        
+      <div className="w-[400px] h-[400px]">
+          <AstroIcon />
       </div>
     </div>
 
