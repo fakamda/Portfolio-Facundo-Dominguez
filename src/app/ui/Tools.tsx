@@ -1,10 +1,12 @@
-import { AstroIcon, BootstrapIcon, CSSIcon } from "@/assets/svg/icons"
+import { BackendIcons, FrontendIcons, LearningIcons, TestAndToolsIcons } from "./ToolsIcons"
+
 
 const Tools = () => {
-  const frontendIcons = [<AstroIcon />, <BootstrapIcon />, <CSSIcon />]
+  const cards = [{ title: 'Frontend', payload: <FrontendIcons /> }, { title: 'Backend', payload: <BackendIcons /> }, { title: 'Testing and Tools', payload: <TestAndToolsIcons /> }, { title: 'Learning', payload: <LearningIcons /> }]
+
   return (
-    <div className="flex flex-col justify-center items-center mt-10">
-      <div>
+    <div className="flex flex-col justify-center items-center">
+      <div className="m-10">
         <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
           Tools and Skills.
         </h2>
@@ -13,23 +15,17 @@ const Tools = () => {
           This are the main tools that I know and Use.
         </p>
       </div>
-      <div className="w-[400px] h-[400px]">
-        <div className="flex flex-col justify-center items-center">
-          <h3>Frontend Tools</h3>
-          <div className="isolate aspect-video w-96 rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5">
-            <div className="flex flex-row flex-wrap justify-center items-center gap-3">
-              {
-                frontendIcons.map((icon, index) => (
-                  <div key={index} className="w-[100px]">
-                    {icon}
-                  </div>
-                ))
-              }
+      <div className="grid grid-cols-2 gap-10">
+        {
+          cards.map((card, index) => (
+            <div key={index} className=" flex flex-col justify-center items-center gap-3 isolate aspect-video w-96 min-h-[410px] rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5">
+              <h2 className='text-2xl font-bold tracking-tighter sm:text-4xl md:text-2xl'>{card.title}</h2>
+              <div className="flex flex-row flex-wrap justify-center items-center gap-3">
+                {card.payload}
+              </div>
             </div>
-          </div>
-
-        </div>
-
+          ))
+        }
       </div>
     </div>
 
