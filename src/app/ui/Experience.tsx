@@ -1,7 +1,7 @@
 
 const Experience = () => {
   return (
-    <section className="flex justify-center w-full py-12 md:py-24">
+    <section id="experience" className="flex justify-center w-full py-12 md:py-24">
     <div className="container px-4 grid max-w-5xl items-center justify-center gap-4 text-center md:gap-10 md:px-6 lg:gap-16">
       <div className="space-y-2">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Experience</h2>

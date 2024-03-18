@@ -4,7 +4,7 @@ import proyecto1 from '../../assets/images/japan1.jpg'
 
 const Projects = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <section id="projects" className="flex flex-col justify-center items-center">
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Proyectos</h2>
       <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed xl:text-base/relaxed dark:text-gray-400">
         Some of the projects I've worked.
@@ -54,7 +54,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
   )

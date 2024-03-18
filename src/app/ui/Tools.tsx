@@ -5,7 +5,7 @@ const Tools = () => {
   const cards = [{ title: 'Frontend', payload: <FrontendIcons /> }, { title: 'Backend', payload: <BackendIcons /> }, { title: 'Testing and Tools', payload: <TestAndToolsIcons /> }, { title: 'Learning', payload: <LearningIcons /> }]
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <section id="tools" className="flex flex-col justify-center items-center">
       <div className="m-10">
         <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
           Tools and Skills.
@@ -27,7 +27,7 @@ const Tools = () => {
           ))
         }
       </div>
-    </div>
+    </section>
 
   )
 }

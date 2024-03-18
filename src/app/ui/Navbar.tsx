@@ -12,16 +12,6 @@ const Navbar = () => {
   }
 
   return (
-    // <nav className="flex justify-around mt-4">
-    //     <div className='font-bold text-xl'>
-    //         Facudev<span className='text-pink-400'>.</span>
-    //     </div>
-    //     <ul className="flex flex-row justify-center items-center gap-8">
-    //         <li className="font-semibold text-white hover:text-pink-400 rounded-md py-2 px-4">Experience</li>
-    //         <li className="font-semibold text-white hover:text-pink-400 rounded-md py-2 px-4">Projects</li>
-    //         <li className="font-semibold text-white hover:text-pink-400 rounded-md py-2 px-4">Contact Me</li>
-    //     </ul>
-    // </nav>
     <>
       <nav>
         <div className="max-w-7xl mx-auto px-4 sm:px6 lg:px-8">
@@ -33,10 +23,11 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-4 items-center space-x-10">
-                <Link href={'/'} className="text-white hover:text-pink-400">Home</Link>
-                <Link href={'/'} className="text-white hover:text-pink-400">Experience</Link>
-                <Link href={'/'} className="text-white hover:text-pink-400">Projects</Link>
-                <Link href={'/'} className="text-white hover:text-pink-400">Contact</Link>
+                {/* <Link href={'/'} className="text-white hover:text-pink-400">Home</Link> */}
+                <Link href={'#experience'} className="text-white hover:text-pink-400">Experience</Link>
+                <Link href={'#projects'} className="text-white hover:text-pink-400">Projects</Link>
+                <Link href={'#tools'} className="text-white hover:text-pink-400">Techs</Link>
+                <Link href={'#contact'} className="text-white hover:text-pink-400">Contact</Link>
               </div>
             </div>
             <div className="md:hidden flex items-center">
@@ -52,9 +43,9 @@ const Navbar = () => {
         </div>
         {isClick && (
           <div className="px-4 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center gap-2">
-            <Link href={'/'} className="text-white hover:text-pink-400">Home</Link>
             <Link href={'/'} className="text-white hover:text-pink-400">Experience</Link>
             <Link href={'/'} className="text-white hover:text-pink-400">Projects</Link>
+            <Link href={'/'} className="text-white hover:text-pink-400">Techs</Link>
             <Link href={'/'} className="text-white hover:text-pink-400">Contact</Link>
           </div>
         )}

@@ -21,7 +21,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center gap-5 m-20">
+    <section id="contact" className="flex flex-col justify-center items-center gap-5 m-20">
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Me</h2>
       <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed xl:text-base/relaxed dark:text-gray-400">
         Leave your message and I will contact you back.
@@ -44,7 +44,7 @@ const Contact = () => {
       
       <div className="circlePosition sm:w-[900px] w-[200px] h-[200px] bg-gradient-to-r from-orange-300 via-purple-400 to-pink-500 rounded-[100%] sm:translate-x-[45%] absolute z-[-1] blur-[200px]"></div>
 
-    </div>
+    </section>
   )
 }
 
