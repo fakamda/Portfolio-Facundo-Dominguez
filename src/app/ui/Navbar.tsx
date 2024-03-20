@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-4 items-center space-x-10">
-                {/* <Link href={'/'} className="text-white hover:text-pink-400">Home</Link> */}
+                <Link href={'/'} className="text-white hover:text-pink-400">Home</Link>
                 <Link href={'#experience'} className="text-white hover:text-pink-400">Experience</Link>
                 <Link href={'#projects'} className="text-white hover:text-pink-400">Projects</Link>
                 <Link href={'#tools'} className="text-white hover:text-pink-400">Techs</Link>
