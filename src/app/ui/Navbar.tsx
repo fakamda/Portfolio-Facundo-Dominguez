@@ -1,19 +1,37 @@
 'use client'
 
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { MdMenu } from "react-icons/md";
 import { MdClose } from "react-icons/md";
 
 const Navbar = () => {
   const [isClick, setIsClick] = useState(false)
+  const [header, setHeader] = useState(false)
+
   const toggleNavbar = (): void => {
     setIsClick(!isClick)
   }
 
+  const scrollHeader = () => {
+    if(window.scrollY >= 20) {
+      setHeader(true)
+    } else {
+      setHeader (false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrollHeader)
+    return () => {
+      window.addEventListener('scroll', scrollHeader)
+    }
+  },[])
+
+
   return (
     <>
-      <nav>
+      <nav className={ header ? "fixed top-0 w-[100%] text-white isolate rounded-xl bg-black/85 shadow-lg ring-1 ring-black/5 z-[20]" : "bg-transparent" }>
         <div className="max-w-7xl mx-auto px-4 sm:px6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
