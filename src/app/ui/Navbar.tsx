@@ -14,24 +14,24 @@ const Navbar = () => {
   }
 
   const scrollHeader = () => {
-    if(window.scrollY >= 20) {
+    if (window.scrollY >= 20) {
       setHeader(true)
     } else {
-      setHeader (false)
+      setHeader(false)
     }
   }
 
   useEffect(() => {
     window.addEventListener('scroll', scrollHeader)
     return () => {
-      window.addEventListener('scroll', scrollHeader)
+      window.removeEventListener('scroll', scrollHeader)
     }
-  },[])
+  }, [])
 
 
   return (
     <>
-      <nav className={ header ? "fixed top-0 w-[100%] text-white isolate rounded-xl bg-black/85 shadow-lg ring-1 ring-black/5 z-[20]" : "bg-transparent" }>
+      <nav className={header ? "sticky top-0 w-[100%] text-white isolate rounded-xl bg-black/85 shadow-lg ring-1 ring-black/5 z-[20] mb-5" : "bg-transparent"}>
         <div className="max-w-7xl mx-auto px-4 sm:px6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -61,10 +61,11 @@ const Navbar = () => {
         </div>
         {isClick && (
           <div className="px-4 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center gap-2">
-            <Link href={'/'} className="text-white hover:text-pink-400">Experience</Link>
-            <Link href={'/'} className="text-white hover:text-pink-400">Projects</Link>
-            <Link href={'/'} className="text-white hover:text-pink-400">Techs</Link>
-            <Link href={'/'} className="text-white hover:text-pink-400">Contact</Link>
+            <Link href={'/'} className="text-white hover:text-pink-400">Home</Link>
+            <Link href={'#experience'} className="text-white hover:text-pink-400">Experience</Link>
+            <Link href={'#projects'} className="text-white hover:text-pink-400">Projects</Link>
+            <Link href={'#tools'} className="text-white hover:text-pink-400">Techs</Link>
+            <Link href={'#contact'} className="text-white hover:text-pink-400">Contact</Link>
           </div>
         )}
       </nav>

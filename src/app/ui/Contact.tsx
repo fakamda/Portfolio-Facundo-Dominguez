@@ -39,10 +39,10 @@ const Contact = () => {
         <label htmlFor="message" className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed xl:text-base/relaxed dark:text-gray-400">Message</label>
         <textarea name="message" id="" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light resize-none py-8"></textarea>
       </form>
-      <button className="bg-pink-400 px-10 py-3 text-center rounded-xl mt-5">Send</button>
+      <button className="bg-pink-500 px-10 py-3 text-center rounded-xl mt-5">Send</button>
       </div>
       
-      <div className="circlePosition sm:w-[900px] w-[200px] h-[200px] bg-gradient-to-r from-orange-300 via-purple-400 to-pink-500 rounded-[100%] sm:translate-x-[45%] absolute z-[-1] blur-[200px]"></div>
+      <div className="circlePosition sm:w-[900px] md:w-[400px] xl:w-[700px] w-[300px] h-[200px] bg-gradient-to-r from-orange-300 via-purple-400 to-pink-500 rounded-[100%] sm:translate-x-[35%] translate-y-[-100%] absolute z-[-1] blur-[140px] md:blur-[200px]"></div>
 
     </section>
   )

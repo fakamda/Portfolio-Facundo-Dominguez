@@ -8,7 +8,6 @@ import Tools from "./ui/Tools"
 export default function Home() {
   return (
     <>
-    
       <NavigationBar />
       <Hero />
       <Experience />

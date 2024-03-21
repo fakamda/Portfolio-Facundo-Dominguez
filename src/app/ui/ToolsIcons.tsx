@@ -9,7 +9,7 @@ export const FrontendIcons = () => {
         <>
              {
                 frontendIcons.map((icon, index) => (
-                    <div key={index} className="w-[80px] h-[80px] m-2">
+                    <div key={index} className="w-[70px] h-[70px] md:w-[80px] md:h-[80px] m-2">
                     {icon?.payload}
                     <p className="text-white text-center">{icon?.name}</p>
                   </div>
@@ -21,13 +21,13 @@ export const FrontendIcons = () => {
 
 export const BackendIcons = () => {
     
-    const backendIcons = [{name: "Node.js", payload: <NodejsIcon />}, {name: "Express", payload:<ExpressIcon />}, {name: "Next", payload: <NextjsIcon />}, {name: "Firebase", payload:<FirebaseIcon />}, {name: "Mongo DB", payload:<MongoDBIcon />}, {name: "MySQL", payload: <MySQLIcon />}, {name: "Postgre", payload: <PostgreSQLIcon />} , {name: "GraphQL", payload: <GraphQLIcon />}, {name: "Postman", payload: <PostmanIcon />}]
+    const backendIcons = [{name: "Node.js", payload: <NodejsIcon />}, {name: "Express", payload:<ExpressIcon />}, {name: "Next", payload: <NextjsIcon />}, {name: "Firebase", payload:<FirebaseIcon />}, {name: "MongoDB", payload:<MongoDBIcon />}, {name: "MySQL", payload: <MySQLIcon />}, {name: "Postgre", payload: <PostgreSQLIcon />} , {name: "GraphQL", payload: <GraphQLIcon />}, {name: "Postman", payload: <PostmanIcon />}]
 
     return (
         <>
              {
                 backendIcons.map((icon, index) => (
-                    <div key={index} className="w-[80px] h-[80px] m-2">
+                    <div key={index} className="w-[70px] h-[70px] md:w-[80px] md:h-[80px] m-2">
                     {icon?.payload}
                     <p className="text-white text-center">{icon?.name}</p>
                   </div>
@@ -45,7 +45,7 @@ export const TestAndToolsIcons = () => {
         <>
              {
                 backendIcons.map((icon, index) => (
-                  <div key={index} className="w-[80px] h-[80px] m-2">
+                  <div key={index} className="w-[70px] h-[70px] md:w-[80px] md:h-[80px] m-2">
                     {icon?.payload}
                     <p className="text-white text-center">{icon?.name}</p>
                   </div>
@@ -63,7 +63,7 @@ export const LearningIcons = () => {
         <>
              {
                 backendIcons.map((icon, index) => (
-                    <div key={index} className="w-[80px] h-[80px] m-2">
+                    <div key={index} className="w-[70px] h-[70px] md:w-[80px] md:h-[80px] m-2">
                      {icon?.payload}
                     <p className="text-white text-center">{icon?.name}</p>
                   </div>
