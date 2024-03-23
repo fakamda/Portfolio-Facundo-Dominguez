@@ -1,5 +1,6 @@
 import Image from "next/image"
 import proyecto1 from '../../assets/images/japan1.jpg'
+import { FaGithub } from "react-icons/fa";
 
 
 const Projects = () => {
@@ -28,7 +29,7 @@ const Projects = () => {
             <div className="w-full p-1 md:p-2">
               <img
                 alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
+                className="block h-full w-full rounded-lg object-cover object-center transition-all hover:scale-[102%]"
                 src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" />
             </div>
           </div>
