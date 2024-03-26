@@ -4,7 +4,7 @@ import { useState } from "react"
 import { MdContentCopy } from "react-icons/md";
 
 const Contact = () => {
-  const textToCopy = 'facundodm2010@hotmail.com'
+  const textToCopy = 'facundo.dominguez.dev@gmail.com'
   const [copySuccess, setCopySuccess] = useState(false)
   
   const handleCopy = () => {
