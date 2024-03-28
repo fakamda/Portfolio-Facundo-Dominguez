@@ -37,6 +37,10 @@ const Contact = () => {
     })
     if(res.ok){
       console.log('Message sent successfully')
+      
+      event.target.name.value = ''
+      event.target.email.value = ''
+      event.target.message.value = ''
     }
     if(!res.ok) {
       console.log("error sending message")
