@@ -45,6 +45,7 @@ const Experience = () => {
               Desarrollo y prototipo nuevas características para diversos proyectos como freelance. Utilizo investigación de usuarios para guiar las decisiones de desarrollo.
             </p>
           </div>
+          {/* TODO: CERTIFICADOS Y ESTUDIOS. */}
         </div>
       </div>
     </section>
