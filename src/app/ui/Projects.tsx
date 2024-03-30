@@ -10,6 +10,7 @@ const Projects = () => {
         Some of the projects I've worked.
       </p>
       {/* todo: MAP DEL ARRAY DE LOS PROYECTOS */}
+      {/* quizas hacerun slider con los proyectos */}
       
       <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24 mb-10 xl:w-2/3 lg:w-full">
         <div className="-m-1 flex flex-wrap md:-m-2">
