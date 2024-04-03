@@ -1,6 +1,11 @@
 import Image from "next/image"
 import logoTelviso from '../../assets/images/telviso_logo.jpg'
 import logoFullstack from '../../assets/images/full-stack-logo-img.webp'
+import frontEndReactImage from '../../assets/images/Frontend React.png'
+import javascriptImage from '../../assets/images/Javascript.png'
+import desarolloWebImage from '../../assets/images/Desarrollo Web.png'
+import backendImage from '../../assets/images/Backend.png'
+import fullstackImage from  '../../assets/images/Full Stack.png'
 
 const Experience = () => {
   return (
@@ -46,8 +51,26 @@ const Experience = () => {
               Desarrollo y prototipo nuevas características para diversos proyectos como freelance. Utilizo investigación de usuarios para guiar las decisiones de desarrollo.
             </p>
           </div>
-          {/* TODO: CERTIFICADOS Y ESTUDIOS. */}
+          {/* TODO: modal a cada uno */}
         </div>
+          <h3 className="text-xl font-bold">Some of my Certificates</h3>
+          <div className="flex flex-row justify-between items-center gap-3">
+            <div>
+              <Image src={desarolloWebImage} alt="Front End React Certificate" className="w-72"></Image>
+            </div>
+            <div>
+              <Image src={javascriptImage} alt="Front End React Certificate" className="w-72"></Image>
+            </div>
+            <div>
+              <Image src={frontEndReactImage} alt="Front End React Certificate" className="w-72"></Image>
+            </div>
+            <div>
+              <Image src={backendImage} alt="Front End React Certificate" className="w-72"></Image>
+            </div>
+            <div>
+              <Image src={fullstackImage} alt="Front End React Certificate" className="w-72"></Image>
+            </div>
+          </div>
       </div>
     </section>
   )
