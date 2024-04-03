@@ -5,7 +5,7 @@ import frontEndReactImage from '../../assets/images/Frontend React.png'
 import javascriptImage from '../../assets/images/Javascript.png'
 import desarolloWebImage from '../../assets/images/Desarrollo Web.png'
 import backendImage from '../../assets/images/Backend.png'
-import fullstackImage from  '../../assets/images/Full Stack.png'
+import fullstackImage from '../../assets/images/Full Stack.png'
 
 const Experience = () => {
   return (
@@ -51,26 +51,35 @@ const Experience = () => {
               Desarrollo y prototipo nuevas características para diversos proyectos como freelance. Utilizo investigación de usuarios para guiar las decisiones de desarrollo.
             </p>
           </div>
-          {/* TODO: modal a cada uno */}
         </div>
-          <h3 className="text-xl font-bold">Some of my Certificates</h3>
-          <div className="flex flex-row justify-between items-center gap-3">
-            <div>
-              <Image src={desarolloWebImage} alt="Front End React Certificate" className="w-72"></Image>
-            </div>
-            <div>
-              <Image src={javascriptImage} alt="Front End React Certificate" className="w-72"></Image>
-            </div>
-            <div>
-              <Image src={frontEndReactImage} alt="Front End React Certificate" className="w-72"></Image>
-            </div>
-            <div>
-              <Image src={backendImage} alt="Front End React Certificate" className="w-72"></Image>
-            </div>
-            <div>
-              <Image src={fullstackImage} alt="Front End React Certificate" className="w-72"></Image>
-            </div>
+        <h3 className="text-xl font-bold">Education</h3>
+        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+          <div className="flex flex-col gap-2">
+            <h4 className="text-lg font-bold">Tecnico en Informatica Personal y Profesional</h4>
+            <p className="text-sm text-gray-400">E.E.S.T. N#3 Escobar</p>
+            <p className="text-sm text-gray-400">Feb 2013 - Nov 2017</p>
+            
           </div>
+          <div className="flex flex-col gap-2">
+            <h4 className="text-lg font-bold">Full Stack Developer</h4>
+            <p className="text-sm text-gray-400">Coderhouse</p>
+            <p className="text-sm text-gray-400">Oct 2022 - Oct 2023</p>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 md:flex md:flex-row justify-between items-center gap-3">
+          <div>
+            <Image src={javascriptImage} alt="Front End React Certificate" className="w-72"></Image>
+          </div>
+          <div>
+            <Image src={frontEndReactImage} alt="Front End React Certificate" className="w-72"></Image>
+          </div>
+          <div>
+            <Image src={backendImage} alt="Front End React Certificate" className="w-72"></Image>
+          </div>
+          <div>
+            <Image src={fullstackImage} alt="Front End React Certificate" className="w-72"></Image>
+          </div>
+        </div>
       </div>
     </section>
   )
