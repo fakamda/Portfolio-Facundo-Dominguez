@@ -53,7 +53,7 @@ const Contact = () => {
       <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed xl:text-base/relaxed dark:text-gray-400">
         Leave your message and I will contact you back.
       </p>
-      <div className="flex flex-col justify-center items-center gap-3 isolate aspect-video sm:w-[460px] w-screen min-h-[510px] rounded-xl bg-gray-950/60 shadow-lg ring-1 ring-black/5">
+      <div className="flex flex-col justify-center items-center gap-3 isolate aspect-video sm:w-[460px] w-screen min-h-[550px] rounded-xl bg-gray-950/60 shadow-lg ring-1 ring-black/5">
         <h3 className="text-gray-500 text-m">Send an Email to:</h3>
         <div className="font-semibold text-gray-400 flex gap-2 text-m">{textToCopy}<span className="hover:text-gray-300 " onClick={handleCopy}><MdContentCopy /></span></div>
         {copySuccess && <span style={{ color: 'green' }}>Copied to clipboard!</span>}
