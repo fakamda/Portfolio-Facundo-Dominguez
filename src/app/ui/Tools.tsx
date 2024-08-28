@@ -2,7 +2,7 @@ import { BackendIcons, FrontendIcons, LearningIcons, TestAndToolsIcons } from ".
 
 
 const Tools = () => {
-  const cards = [{ title: 'Frontend', payload: <FrontendIcons /> }, { title: 'Backend', payload: <BackendIcons /> }, { title: 'Testing and Tools', payload: <TestAndToolsIcons /> }, { title: 'Learning', payload: <LearningIcons /> }]
+  const cards = [{ title: 'Frontend', payload: <FrontendIcons /> }, { title: 'Backend', payload: <BackendIcons /> }, { title: 'Infraestructure', payload: <TestAndToolsIcons /> }, { title: 'Other tools', payload: <LearningIcons /> }]
 
   return (
     <section id="tools" className="flex flex-col justify-center items-center">

@@ -9,8 +9,15 @@ const About = () => {
     <div>
       {/* corregir esto */}
         <div className="flex flex-col justify-center gap-3 xl:w-[600px] md:w-[450px] w-full sm:h-[400px] text-wrap mt-4">
-            <h3 className="text-lg font-bold text-pink-400">Sobre mi:</h3>
-            <p>Soy un apasionado graduado en tecnología informática con experiencia como técnico en informática y actualmente estudiante de análisis en sistemas. Mi fascinación por el desarrollo fullstack se combina con un profundo interés en las telecomunicaciones, explorando cómo la tecnología conecta y transforma nuestro mundo. Fuera del mundo digital, disfruto sumergirme en juegos desafiantes y mantenerme en forma a través del entrenamiento físico. Busco constantemente nuevas oportunidades para expandir mis habilidades y contribuir al emocionante campo de la tecnología. </p>
+            <h3 className="text-lg font-bold text-pink-400">About me:</h3>
+            <p>
+              I am a passionate graduate in computer technology with experience as an IT technician
+               and currently a student of systems analysis. I have a strong interest in both development
+                and infrastructure, appreciating how each discipline contributes to the broader technology landscape.
+                 Outside the digital world, I enjoy challenging games and staying fit through physical training.
+                  I am constantly looking for new opportunities to expand my skills and make meaningful contributions
+                   in both development and infrastructure.
+            </p>
             <div className="flex justify-start gap-4 mt-3">
               <Link href={"https://www.linkedin.com/in/facundo-dominguez-6557bb24b/"} target="_blank" className="flex justify-center items-center py-2 px-4 border-2 rounded-md gap-2">
                 LinkedIn

@@ -1,4 +1,4 @@
-import { AstroIcon, BashIcon, BootstrapIcon, CSSIcon, CSharpIcon, DockerIcon, EsLintIcon, ExpoIcon, ExpressIcon, FirebaseIcon, GitHubAuctionsIcon, GitHubIcon, GitIcon, GraphQLIcon, HTMLIcon, HandlebarsIcon, JSONIcon, JavaIcon, JavaScriptIcon, JestIcon, KubernetesIcon, MaterialUIIcon, MochaIcon, MongoDBIcon, MySQLIcon, NextjsIcon, NodejsIcon, NpmIcon, PlaywrightIcon, PostgreSQLIcon, PostmanIcon, PuttyIcon, PythonIcon, ReactIcon, ReduxIcon, SassIcon, SpringIcon, TailwindIcon, TypescriptIcon } from "@/assets/svg/icons"
+import {JiraLogo, UbuntuLogo, AWSIcon, AstroIcon, BashIcon, BootstrapIcon, CSSIcon, CSharpIcon, DockerIcon, EsLintIcon, ExpoIcon, ExpressIcon, FirebaseIcon, GitHubAuctionsIcon, GitHubIcon, GitIcon, GraphQLIcon, HTMLIcon, HandlebarsIcon, JSONIcon, JavaIcon, JavaScriptIcon, JestIcon, KubernetesIcon, MaterialUIIcon, MochaIcon, MongoDBIcon, MySQLIcon, NextjsIcon, NodejsIcon, NpmIcon, PlaywrightIcon, PostgreSQLIcon, PostmanIcon, PuttyIcon, PythonIcon, ReactIcon, ReduxIcon, SassIcon, SpringIcon, TailwindIcon, TypescriptIcon } from "@/assets/svg/icons"
 
 export const FrontendIcons = () => {
     
@@ -39,7 +39,7 @@ export const BackendIcons = () => {
 
 export const TestAndToolsIcons = () => {
     
-    const backendIcons = [{name: "Jest", payload: <JestIcon />}, {name: "Mocha", payload:<MochaIcon />}, {name: "Git", payload:<GitIcon />}, {name: "Github", payload:<GitHubIcon />}, {name: "Bash", payload: <BashIcon />}, {name: "NPM", payload: <NpmIcon />} , {name: "EsLint", payload: <EsLintIcon />}, {name: "Docker", payload: <DockerIcon />}]
+    const backendIcons = [{name: "Ubuntu Sv", payload: <UbuntuLogo />}, , {name: "Git", payload:<GitIcon />}, {name: "Github", payload:<GitHubIcon />}, {name: "Bash", payload: <BashIcon />}, {name: "NPM", payload: <NpmIcon />} , {name: "Docker", payload: <DockerIcon />}, {name: "Kubernetes", payload: <KubernetesIcon />}, {name: "AWS", payload: <AWSIcon/>}, {name: "Jira", payload: <JiraLogo/>}]
 
     return (
         <>
@@ -57,7 +57,7 @@ export const TestAndToolsIcons = () => {
 
 export const LearningIcons = () => {
     
-    const backendIcons = [{name: "Python", payload: <PythonIcon />}, {name: "Typescript", payload:<TypescriptIcon />}, {name: "Astro", payload:<AstroIcon />}, {name: "Expo", payload:<ExpoIcon />}, {name: "Java", payload: <JavaIcon />}, {name: "Spring", payload: <SpringIcon />} , {name: "Kubernetes", payload: <KubernetesIcon />}, {name: "Playwright", payload: <PlaywrightIcon />}]
+    const backendIcons = [{name: "Python", payload: <PythonIcon />}, {name: "Typescript", payload:<TypescriptIcon />}, {name: "Astro", payload:<AstroIcon />}, {name: "Expo", payload:<ExpoIcon />}, {name: "Java", payload: <JavaIcon />}, {name: "Spring", payload: <SpringIcon />} , {name: "Mocha", payload:<MochaIcon />}, {name: "Playwright", payload: <PlaywrightIcon />}]
 
     return (
         <>
